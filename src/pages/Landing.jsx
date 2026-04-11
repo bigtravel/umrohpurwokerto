@@ -10,7 +10,7 @@ import Testimonial from '../components/Testimonial/Testimonial';
 import Footer from '../components/Footer/Footer';
 import FloatingWhatsApp from '../components/FloatingWhatsApp/FloatingWhatsApp';
 
-import landmarkImg from '../assets/menara-pandang-purwokerto.jpg';
+import landmarkImg from '../assets/foto-jamaah-big-travel-pwt.jpg';
 
 const region = 'Purwokerto';
 const bgPosition = 'center';

@@ -12,7 +12,7 @@ const FastFacts = ({ region }) => {
         <div className="fact-divider"></div>
         <div className="fact-item">
           <span className="fact-icon">✈️</span>
-          <span className="fact-text">Saudi/Garuda</span>
+          <span className="fact-text">Maskapai Internasional Full Service</span>
         </div>
         <div className="fact-divider"></div>
         <div className="fact-item">

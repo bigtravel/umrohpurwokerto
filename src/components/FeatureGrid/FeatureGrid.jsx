@@ -1,7 +1,31 @@
 import React from 'react';
 import './FeatureGrid.css';
+import armadaImg from '../../assets/bus-travel.png';
+import haramainImg from '../../assets/haramain.png';
+import museumImg from '../../assets/museum-wahyu.jpeg';
 
 const FeatureGrid = ({ region }) => {
+  const features = [
+    {
+      title: "Armada Sendiri",
+      desc: `Pulang Pergi dijemput armada eksklusif kami. Titik kumpul nyaman langsung di ${region}.`,
+      image: armadaImg,
+      imageAlt: "Armada Big Travel"
+    },
+    {
+      title: "Kereta Cepat Haramain",
+      desc: "GRATIS! Nikmati perjalanan Madinah-Makkah secepat kilat dengan tiket kereta cepat.",
+      image: haramainImg,
+      imageAlt: "Kereta Cepat Haramain"
+    },
+    {
+      title: "Museum Wahyu",
+      desc: "Napak tilas sejarah turunnya wahyu pertama di Museum Wahyu (Tiket Masuk Gratis).",
+      image: museumImg,
+      imageAlt: "Museum Wahyu"
+    }
+  ];
+
   return (
     <section className="feature-section" id="program">
       <div className="container">
@@ -11,38 +35,17 @@ const FeatureGrid = ({ region }) => {
         </div>
         
         <div className="feature-grid">
-
-          <div className="feature-card">
-            <div className="feature-icon-wrapper">
-              <span className="feature-icon">🚌</span>
+          {features.map((feature, index) => (
+            <div className={`feature-card ${index % 2 !== 0 ? 'reverse' : ''}`} key={index}>
+              <div className="feature-image-wrapper">
+                <img src={feature.image} alt={feature.imageAlt} className="feature-image" />
+              </div>
+              <div className="feature-content">
+                <h3 className="card-title">{feature.title}</h3>
+                <p className="card-desc">{feature.desc}</p>
+              </div>
             </div>
-            <h3 className="card-title">Armada Sendiri</h3>
-            <p className="card-desc">
-              Pulang Pergi dijemput armada eksklusif kami. Titik kumpul nyaman langsung di <strong>{region}</strong>.
-            </p>
-          </div>
-
-
-          <div className="feature-card">
-            <div className="feature-icon-wrapper">
-              <span className="feature-icon">🚄</span>
-            </div>
-            <h3 className="card-title">Kereta Cepat Haramain</h3>
-            <p className="card-desc">
-              <strong>GRATIS!</strong> Nikmati perjalanan Madinah-Makkah secepat kilat dengan tiket kereta cepat.
-            </p>
-          </div>
-
-
-          <div className="feature-card">
-            <div className="feature-icon-wrapper">
-              <span className="feature-icon">📖</span>
-            </div>
-            <h3 className="card-title">Museum Wahyu</h3>
-            <p className="card-desc">
-              Napak tilas sejarah turunnya wahyu pertama di Museum Wahyu <strong>(Tiket Masuk Gratis)</strong>.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>
@@ -50,3 +53,4 @@ const FeatureGrid = ({ region }) => {
 };
 
 export default FeatureGrid;
+

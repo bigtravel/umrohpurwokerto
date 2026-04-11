@@ -60,13 +60,29 @@
 }
 
 .hero-title .highlight {
-  color: var(--color-gold);
-  font-family: var(--font-accent);
-  font-size: 4rem;
-  font-weight: 400;
+  position: relative;
   display: inline-block;
-  transform: rotate(-2deg);
-  margin-left: 0.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  transform: none;
+  margin-left: 0.2rem;
+  z-index: 1;
+}
+
+.hero-title .highlight::after {
+  content: "";
+  position: absolute;
+  left: -4%;
+  bottom: 4px;
+  width: 108%;
+  height: 18px;
+  background-color: #ffec33;
+  opacity: 1;
+  z-index: -1;
+  border-radius: 100% 10% 95% 5%; /* More dramatic wavy marker look */
+  transform: rotate(-1.2deg);
 }
 
 .hero-subtitle {

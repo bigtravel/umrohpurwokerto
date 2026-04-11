@@ -42,6 +42,7 @@ const Header = () => {
           </a>
           <div className="logo-text-wrapper">
             <span className="logo-title">BIG Travel</span>
+            <span className="logo-slogan">Biro Umrohe Wong <span className="slogan-break">Barlingmascakeb</span></span>
             <div className="logo-subtitle">
               {regions.map((region, index) => {
                 const isActive = region === 'Purwokerto';
