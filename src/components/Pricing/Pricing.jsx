@@ -57,14 +57,14 @@ const Pricing = () => {
 
           <div className="accommodation-wrap">
             <p className="accommodation-desc">
-              Tersedia Juga Paket Akomodasi <span className="highlight-price">Rp2.000.000</span> Premium Pulang Pergi antara Purwokerto ke Bandara Soekarno Hatta (Transportasi, Konsumsi & Hotel).
+              Tersedia Juga Paket Akomodasi <span className="highlight-price">Rp2.000.000 Premium</span> 
             </p>
             <div className="accommodation-benefits">
               <h5 className="benefit-label">Benefit:</h5>
               <ul className="accommodation-list">
-                <li><span className="check-icon">✅</span> Berangkat dari Purwokerto dengan Armada Sendiri</li>
-                <li><span className="check-icon">✅</span> Menginap 1 Malam di Hotel dekat Bandara Soekarno Hatta</li>
-                <li><span className="check-icon">✅</span> Penjemputan Kepulangan dari Bandara Soekarno Hatta ke Purwokerto</li>
+                <li><span className="check-icon">✅</span> Keberangkatan dari Kantor Purwokerto dan kepulangan dari Bandara Soekarno Hatta dengan Armada BIG Travel</li>
+                <li><span className="check-icon">✅</span> Menginap 1 malam di Hotel dekat Bandara Soekarno Hatta</li>
+                <li><span className="check-icon">✅</span> Makan dan Snack saat Keberangkatan dan Kepulangan</li>
               </ul>
             </div>
           </div>
