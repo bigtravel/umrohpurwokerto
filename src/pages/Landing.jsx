@@ -32,7 +32,6 @@ const Landing = () => {
         <FeatureGrid region={region} />
         <Pricing />
         <Gift />
-        <Testimonial region={region} />
         <Schedule />
       </main>
       <Footer />
