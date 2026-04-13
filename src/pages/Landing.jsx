@@ -7,6 +7,7 @@ import FeatureGrid from '../components/FeatureGrid/FeatureGrid';
 import Pricing from '../components/Pricing/Pricing';
 import Gift from '../components/Gift/Gift';
 import Testimonial from '../components/Testimonial/Testimonial';
+import Schedule from '../components/Schedule/Schedule';
 import Footer from '../components/Footer/Footer';
 import FloatingWhatsApp from '../components/FloatingWhatsApp/FloatingWhatsApp';
 
@@ -32,6 +33,7 @@ const Landing = () => {
         <Pricing />
         <Gift />
         <Testimonial region={region} />
+        <Schedule />
       </main>
       <Footer />
       <FloatingWhatsApp />

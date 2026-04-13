@@ -33,10 +33,10 @@
 }
 
 .feature-card {
-  background-color: #f3f4f6; /* Light gray background like in screenshot */
+  background-color: #f3f4f6; 
   border-radius: 24px;
   display: flex;
-  align-items: stretch; /* Stretch to fill full height, removing gaps */
+  align-items: stretch; 
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   min-height: 280px;
@@ -45,7 +45,7 @@
 .feature-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-  background-color: #ffffff; /* Subtle color change on hover */
+  background-color: #ffffff; 
 }
 
 .feature-card.reverse {

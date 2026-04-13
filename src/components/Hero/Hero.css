@@ -81,7 +81,7 @@
   background-color: #ffec33;
   opacity: 1;
   z-index: -1;
-  border-radius: 100% 10% 95% 5%; /* More dramatic wavy marker look */
+  border-radius: 100% 10% 95% 5%; 
   transform: rotate(-1.2deg);
 }
 
