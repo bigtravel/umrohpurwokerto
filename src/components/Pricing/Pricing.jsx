@@ -11,9 +11,12 @@ const Pricing = () => {
           <div className="pricing-header">
             <h3 className="package-title">Paket Umroh 10 Hari - Keberangkatan 23 Juni 2026</h3>
             <div className="package-price">
-              <span className="currency">Rp</span>
-              <span className="amount">28.500.000</span>
-              <span className="per-pax">/pax</span>
+              <span className="price-label">Harga Mulai</span>
+              <div className="price-amount-wrap">
+                <span className="currency">Rp</span>
+                <span className="amount">28.500.000</span>
+                <span className="per-pax">/pax</span>
+              </div>
             </div>
           </div>
           
@@ -57,7 +60,8 @@ const Pricing = () => {
 
           <div className="accommodation-wrap">
             <p className="accommodation-desc">
-              Tersedia Juga Paket Akomodasi <span className="highlight-price">Rp2.000.000 Premium</span> 
+              Tersedia Juga Paket Akomodasi <br />
+              <span className="highlight-price"><span className="small-currency">Rp</span>2.000.000 Premium</span> 
             </p>
             <div className="accommodation-benefits">
               <h5 className="benefit-label">Benefit:</h5>
